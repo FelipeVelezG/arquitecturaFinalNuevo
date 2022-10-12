@@ -26,36 +26,22 @@ let casaAlicante = [
         },
 
 ];
-let fila = document.getElementById("fila")
+let filaContendidoProductos = document.getElementById("filaContendidoProductos")
+filaContendidoProductos.classList.add("contenedorFotosProductos")
 
 casaAlicante.forEach(function(casaAlicante){
 
-    let columna = document.createElement("div")
-    columna.classList.add("col","columna")
+    let columna =document.createElement("div")
+    columna.classList.add("col")
     
-    let tarjeta=document.createElement("img")
-    tarjeta.classList.add("img-fluid","ms-2","border-right","w-100","h-100","fila")
-    tarjeta.src=casaAlicante.foto
-
-    let trasparente = document.createElement("div")
-    trasparente.classList.add("trasnparenteParaIconos")
-    
-    
-    // let iconos=document.createElement("div")
-    // iconos.classList.add("position-absolute","top-100", "start-50", "translate-middle", "backgr")
-
-    // let imagen =document.createElement("img")
-    // imagen.classList.add("img-fluid","w-75","h-50","mt-4","ms-5")
-    // imagen.
-    // console.log(casaAlicante.foto)
+    let tarjetaFotoProducto=document.createElement("img")
+    tarjetaFotoProducto.classList.add("cartasProductos")
+    tarjetaFotoProducto.src=casaAlicante.foto
 
 
-    // tarjeta.appendChild(tarjetaiconos)
-    // trasparente.appendChild(columna)
-    // columna.append(tarjeta)
-    columna.appendChild(trasparente)
-    columna.appendChild(tarjeta)
-    // columna.appendChild(tarjetaTrasera)  
-    fila.appendChild(columna)
+
+
+    columna.appendChild(tarjetaFotoProducto)
+    filaContendidoProductos.appendChild(columna)
 
 })

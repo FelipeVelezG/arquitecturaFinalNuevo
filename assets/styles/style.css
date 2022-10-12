@@ -53,25 +53,40 @@ body .cuadro{
     margin-bottom: 200px;
 }
 
-.fila{
-   box-shadow:10px 10px 0px grey;
-   width: 300px;
-   height: 300px;
-   margin: 20px;
-   
+
+
+
+
+
+#filaAgregarFoto{
+    border: 5px solid black;
+    height: 15%;
+    justify-content: space-between;
+    
 }
-.columna{
-    position: relative;
+#filaPrincipal{
+    width: 100%;
+    height: 100%;
 }
 
-.trasnparenteParaIconos{
-    width: 235px;
-    height: 10vh;
-    background-color: rgba(246, 239, 239, 0.52);
-    position: absolute;
-    bottom: -8%;
-    z-index: 8;
-    left: 11%;
+#BotonAgregarFoto{
+    width: 145px;
+    height: 40px;
+    background-color:rgba(0, 0, 0, 0.565);
+    color: white;
+    margin-left: 20px;
+    margin-top: 35px;
+}
+.contenedorFotosProductos{
+    border: 1px solid black;
+}
+
+.cartasProductos{
+    width: 250px;
+    height: 280px;
+    box-shadow: 10px 10px 0px gray;
+    margin-top: 50px;
+    
 
 }
 
